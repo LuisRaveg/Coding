@@ -1,0 +1,44 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/cpp
+{
+	"name": "Python 3",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+     "image": "mcr.microsoft.com/devcontainers/universal:2",
+     "features": {
+         "ghcr.io/devcontainers-contrib/features/coverage-py:2": {}
+     },	
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"analytic-signal.preview-pdf",
+				"ms-vsliveshare.vsliveshare",
+				"ms-vscode.cpptools",
+				"hediet.vscode-drawio",
+				"grapecity.gc-excelviewer",
+				"webfreak.debug"
+			]
+		}
+	},
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "gcc -v",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+
+	   "postCreateCommand": "pip3 -install pytest",
+	     "postCreateCommand":"pip3 install pycodestyle",
+  	     "postCreateCommand":"pip3 install autopep",
+	    "postCreateCommand":"pip3 install ipython"
+			 
+}

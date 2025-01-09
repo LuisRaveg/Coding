@@ -1,0 +1,7 @@
+{
+    "extensions.autoUpdate": false,
+    "extensions.ignoreRecommendations": true,
+    "extensions.ignore": [
+        "github.copilot"
+    ]
+}
