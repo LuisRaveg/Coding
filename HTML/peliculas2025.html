@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peliculas 2025</title>
+  <style>
+    .imagenes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    h1 {
+      color: white;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    p {
+      color: white;
+      text-align: center;
+    }
+    body {
+      background-color: black;
+    }
+    button {
+      position: absolute;
+      margin-left: 94%;
+      background-color: white;
+      border-radius: 15px;
+      padding: 10px;
+      font-family: Arial;
+    }
+    button:hover {
+      opacity: 0.85;
+      cursor: grab;
+    }
+    #divBoton {
+      display: flex;
+    }
+    img {
+      border-radius: 10px;
+    }
+    img:hover {
+      cursor: grab;
+    }
+    figcaption{
+      color: white;
+    }
+    img{
+      width: 300px;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div id="divBoton">
+    <button onclick="referencias()">Referencias</button>
+  </div>
+  <h1>Peliculas vistas en 2025</h1>
+  
+  <div class="imagenes">
+    <figure>
+      <img 
+        src="https://m.media-amazon.com/images/S/pv-target-images/e6ef816f6b67ce75a3befcab78dfbedcbd46290f811e1ddaeee9335b4131e727.jpg"  
+        id="welive" 
+        onmouseover="GestionarMouse('welive', 'welive-caption', 'https://imageio.forbes.com/specials-images/imageserve/674234cf8e4c0eed5004d245/Grace-Delaney--Andrew-Garfield-and-Florence-Pugh-in--We-Live-in-Time--/0x0.jpg?format=jpg&crop=1280,720,x0,y0,safe&width=960', '3.5/5', true)" 
+        onmouseout="GestionarMouse('welive', 'welive-caption', 'https://m.media-amazon.com/images/S/pv-target-images/e6ef816f6b67ce75a3befcab78dfbedcbd46290f811e1ddaeee9335b4131e727.jpg', '', false)"
+      >
+      <figcaption id="welive-caption"></figcaption>
+    </figure>
+    <figure>
+    <img src="https://m.media-amazon.com/images/M/MV5BY2FhZGE3NmEtNWJjOC00NDI1LWFhMTQtMjcxNmQzZmEwNGIzXkEyXkFqcGc@._V1_.jpg"  id="nosferatu"  onmouseover="GestionarMouse('nosferatu', 'nosferatu-caption', 'https://static1.moviewebimages.com/wordpress/wp-content/uploads/2024/12/11-nosferatu2024-vanhelsing-universal.jpg', '3/5', true)" 
+    onmouseout="GestionarMouse('nosferatu', 'nosferatu-caption', 'https://m.media-amazon.com/images/M/MV5BY2FhZGE3NmEtNWJjOC00NDI1LWFhMTQtMjcxNmQzZmEwNGIzXkEyXkFqcGc@._V1_.jpg', '', false)">
+    <figcaption id="nosferatu-caption" ></figcaption>
+    </figure>
+    <figure>
+      <img src="https://m.media-amazon.com/images/M/MV5BYThiN2M0NTItODRmNC00NDhlLWFiYTgtMWM2YTEyYzI3ZTY1XkEyXkFqcGc@._V1_.jpg"  id="anora" onmouseover="GestionarMouse('anora', 'anora-caption', 'https://pbs.twimg.com/media/GaWwGX3XgAAR0vI.jpg:large', '4/5', true)" 
+      onmouseout="GestionarMouse('anora', 'anora-caption', 'https://m.media-amazon.com/images/M/MV5BYThiN2M0NTItODRmNC00NDhlLWFiYTgtMWM2YTEyYzI3ZTY1XkEyXkFqcGc@._V1_.jpg', '', false)">
+      <figcaption id="anora-caption" ></figcaption>
+      </figure>
+      <figure>
+        <img src="https://m.media-amazon.com/images/M/MV5BOWMwYjYzYmMtMWQ2Ni00NWUwLTg2MzAtYzkzMDBiZDIwOTMwXkEyXkFqcGc@._V1_.jpg"  id="wicked"  onmouseover="GestionarMouse('wicked', 'wicked-caption', 'https://i.ytimg.com/vi/mhfYjdgUDOA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAoCjNxG1f0i_j3whDkQ1M4GmqUbQ', '3.5/5', true)" 
+        onmouseout="GestionarMouse('wicked', 'wicked-caption', 'https://m.media-amazon.com/images/M/MV5BOWMwYjYzYmMtMWQ2Ni00NWUwLTg2MzAtYzkzMDBiZDIwOTMwXkEyXkFqcGc@._V1_.jpg', '', false)">
+        <figcaption id="wicked-caption" ></figcaption>
+  </div>
+  
+  
+  <div class="imagenes">
+  <figure>
+    <img 
+      src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/07/roald-dahls-matilda-musical-2748045.jpg?tf=1200x" 
+       
+      id="matilda"  
+      onmouseover="GestionarMouse('matilda', 'matilda-caption', 'https://media.vanityfair.com/photos/6397636a73001e541ed12dd3/master/pass/MATILDA_Unit_14280RC.png', '3/5', true)" 
+      onmouseout="GestionarMouse('matilda', 'matilda-caption', 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/07/roald-dahls-matilda-musical-2748045.jpg?tf=1200x', '', false)"
+    >
+    <figcaption id="matilda-caption"></figcaption>
+  </figure> 
+  </div>
+  <script src="peliculas2025.js"></script>
+  <footer>
+    <p id="info"></p>
+  </footer>
+</body>
+</html>
