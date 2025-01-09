@@ -22,4 +22,3 @@ function referencias() {
       imgElement.style.width = "300px";
     }
   }
-  
