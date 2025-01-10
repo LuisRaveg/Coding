@@ -8,4 +8,7 @@ data=list(csv_reader) # se crea una lista de diccionarios
 print(sum([float(l['CLOSE']) for  l in data])/len(data))# se calcula la media
 #Con pandas:
 data=pd.read_csv(fn,index_col=0,parse_dates=True)
-print(data['CLOSE'])
+print(data['CLOSE'].mean())
+
+data.to_excel(r'C:\Users\Administrator\Documents\Coding\Python\Trading\AAPL.xlsx','AAPL')
+data_copy=pd.read_excel(r'C:\Users\Administrator\Documents\Coding\Python\Trading\AAPL.xlsx','AAPL')
