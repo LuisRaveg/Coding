@@ -1,7 +1,7 @@
 
 from random import randint as rnd
-memReg = 'D:/Coding/Python/Trading/members.txt'
-exReg = 'D:/Coding/Python/Trading/inactive.txt'
+memReg = 'D:/Coding/Python/Ejercicios/members.txt'
+exReg = 'D:/Coding/Python/Ejercicios/inactive.txt'
 fee =('yes','no')
 def crearArchivos(current,old):
     with open(current,'w+') as writefile: 
@@ -19,9 +19,7 @@ def crearArchivos(current,old):
         for rowno in range(3):
             date = str(rnd(2015,2020))+ '-' + str(rnd(1,12))+'-'+str(rnd(1,25))
             writefile.write(data.format(rnd(10000,99999),date,fee[1]))
-
-
-
+crearArchivos(memReg,exReg)
 def eliminardatos(memReg,exReg):
     inactive=[]
     with open(memReg,'r+') as file1:
