@@ -1,7 +1,7 @@
 
 from random import randint as rnd
-memReg = 'D:/Coding/Python/Ejercicios/members.txt'
-exReg = 'D:/Coding/Python/Ejercicios/inactive.txt'
+memReg = 'D:/Coding/Python/Ejercicios/Archivos/members.txt'
+exReg = 'D:/Coding/Python/Ejercicios/Archivos/inactive.txt'
 fee =('yes','no')
 def crearArchivos(current,old):
     with open(current,'w+') as writefile: 
